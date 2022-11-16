@@ -1,0 +1,10 @@
+,joint,parent,child,d,theta,r,alpha,home
+0,global,world,link0,0,еш,0,90.00021046,90.00021046
+1,joint0,link0,link1,0,еш,0,-90.00021046,0
+2,joint1,link1,link2,0.3,еш,0,90.00021046,-90.00021046
+3,joint2,link2,link3,0.194,еш,0,-90.00021046,0
+4,joint3,link3,link4,0.4495,еш,0,90.00021046,0
+5,joint4,link4,link5,-0.19,еш,0,-90.00021046,0
+6,joint5,link5,link6,0.35,еш,0,90.00021046,0
+7,joint6,link6,link7,0.183,еш,0,-90.00021046,0
+8,tcp,link7,tcp,0.228,еш,0,90.00021046,90.00021046

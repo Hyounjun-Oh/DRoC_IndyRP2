@@ -15,15 +15,17 @@ d = [300 194 449.5 -190 350 183 228];
 a_dh = [0 0 0 0 0 0 0];
 alpha = [90.00021 -90.0002 90.00021 -90.0002 90.00021 -90.0002 90.00021].*(pi/180);
 %% DATA INITIALIZATION
+
 % Value of each Actuator
 vi = [0 0 0 0 0 0];
 vf = [0 0 0 0 0 0];
 ai = [0 0 0 0 0 0];
 af = [0 0 0 0 0 0];
+
 % Sampling Time
 ti = 0; tf = 2; t = linspace(ti,tf,100*(tf-ti));
-% Desired Pose6
-desired_pose_1 = [800 800 800 0 0 0];
+% Desired Pose
+desired_pose_1 = [500 800 1000 0 0 0];
 %% FIND INITIAL POSE
 
 initial_joints = [-90.0002 0 0 0 0 0 90.00021].*(pi/180);
@@ -63,6 +65,7 @@ for k = 1:length(t)-1
         plot3(Plot_Points(1,:),Plot_Points(2,:),Plot_Points(3,:),'-or','LineWidth',3);
         axis([-1000,1000,-1000,1000,-500,2000]);
         grid on
+        pause(0.001)
     else
         Plot_Points = H_matrix(qf);
         vf = [vxd(k);vyd(k);vzd(k);0;0;0];
