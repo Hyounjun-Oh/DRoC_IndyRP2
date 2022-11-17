@@ -13,7 +13,7 @@ format long
 theta = [0 0 0 0 0 0 0].*(pi/180);
 d = [300 194 449.5 -190 350 183 228];
 a_dh = [0 0 0 0 0 0 0];
-alpha = [90.00021 -90.0002 90.00021 -90.0002 90.00021 -90.0002 90.00021].*(pi/180);
+alpha = [pi/2 -pi/2 pi/2 -pi/2 pi/2 -pi/2 pi/2];
 %% DATA INITIALIZATION
 
 % Value of each Actuator
@@ -25,10 +25,10 @@ af = [0 0 0 0 0 0];
 % Sampling Time
 ti = 0; tf = 2; t = linspace(ti,tf,100*(tf-ti));
 % Desired Pose
-desired_pose_1 = [-400 300 800 0 0 0];
+desired_pose_1 = [500 800 1000 0 0 0];
 %% FIND INITIAL POSE
 
-initial_joints = [-90.0002 1 1 1 1 1 90.00021].*(pi/180);
+initial_joints = [-90.0002 0 0 0 0 0 90.00021].*(pi/180);
 initial_pose = H_matrix(initial_joints);
 %% FIND TRAJECTORIES
 
