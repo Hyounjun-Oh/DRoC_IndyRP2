@@ -1,5 +1,5 @@
-%% DRoC 오현준
-% 7 - dof Indy7 - RP2
+%% Author : Hyounjun Oh
+%% DRoC Lab
 function [J,P6] = jacobian7(theta_array)
 %% HOMOGENEOUS TRANSFORMATION
 array = H_matrix_for_jacobian(theta_array);

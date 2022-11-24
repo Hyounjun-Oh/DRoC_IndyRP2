@@ -1,8 +1,9 @@
 # DRoC_IndyRP2
+전북대학교 DRoC Lab
 
-Hi everyone. 
+Indy-RP2 Motion Control Simulation
 
-This is Simulation of Indy-RP2 for Matlab.
-
-Setting
-1. Matlab R2022a
+[Setting]
+OS : Window 11
+Program : Matlab R2022a
+Manipulator : Neuromeka Indy-RP2 

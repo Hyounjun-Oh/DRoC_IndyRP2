@@ -1,3 +1,5 @@
+%% Author : Hyounjun Oh
+%% DRoC Lab
 function array = H_matrix_for_jacobian(theta_array)
 %% DH파라미터 기입
 d = [300 194 449.5 -190 350 183 228];
